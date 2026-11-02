@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "自研博客系统 —— AnZhiYu 风格 · 服务端渲染 · 极简客户端 JS",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "seed": "node --disable-warning=ExperimentalWarning src/seed.js",
+    "migrate:hexo": "node --disable-warning=ExperimentalWarning src/migrate-hexo.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "highlight.js": "^11.10.0",
+    "markdown-it": "^14.1.0",
+    "sharp": "^0.34.2"
+  }
+}
